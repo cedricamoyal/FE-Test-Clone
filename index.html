@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="output.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>  <title>HTML Form</title>
+</head>
+<body>
+
+  <form action="/url" method="post">
+    <fieldset>
+      <legend>Cake Enquiry Form</legend>
+            <div>
+                <label for="name" class="mainLabel">Name:</label><br>
+                <input type="text" id="name" class="textInput" name="user_name" required/>
+            </div>
+            <div>
+                <label for="mail" class="mainLabel">E-mail:</label><br>
+                <input type="email" id="mail" class="textInput" name="user_email" required/>
+            </div>
+            <div>
+              <p>Type of cake:</p>
+              <input type="checkbox" class="checkOrRadio" id="cupcakes" value="cupcakes"> <label for="cupcakes">Cupcakes</label><br>
+              <input type="checkbox" class="checkOrRadio" id="cheesecakes" value="cheesecakes"> <label for="cheesecakes">Cheesecakes</label><br>
+              <input type="checkbox" class="checkOrRadio" id="buttercakes" value="buttercakes"> <label for="buttercakes">Butter Cakes</label><br>
+              <input type="checkbox" class="checkOrRadio" id="mudcakes" value="mudcakes"> <label for="mudcakes">Mudcakes</label>
+            </div>
+            <div>
+              <p>Celebration type:</p>
+              <input type="radio" class="checkOrRadio radioOnly" id="birthday" name="celebration" value="birthday" onclick="myFunction()" required> <label for="birthday">Birthday</label><br>
+              <input type="radio" class="checkOrRadio radioOnly" id="wedding" name="celebration" value="wedding" onclick="myFunction()"> <label for="wedding">Wedding</label><br>
+              <input type="radio" class="checkOrRadio radioOnly" id="corporate" name="celebration" value="corporate" onclick="myFunction()"> <label for="corporate">Corporate</label><br>
+              <input type="radio" class="checkOrRadio radioOnly" id="other" name="celebration" value="other" onclick="myFunction()"> <label for="other">Other</label><br>
+              <input type="text" id="otherText" class="textInput" name="otherText" />
+            </div>
+
+            <div>
+                <label for="msg" class="mainLabel">Tell us about your dream cake:</label><br>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="mainLabel">Send away</button>
+                <button type="reset" class="restart">Restart</button>
+            </div>
+   </fieldset>
+  </form>
+
+
+<script src="main.js"></script>
+</body>
+</html>

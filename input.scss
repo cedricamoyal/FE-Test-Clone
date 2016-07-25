@@ -1,0 +1,80 @@
+$text-border-color: #e2e2e2;
+$backgound-color: #3c4a54;
+$input-color: #80848a;
+
+body {
+  background-color: $backgound-color;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  color: $text-border-color;
+  font-weight: 300;
+}
+
+form {
+    margin: 0 auto;
+    width: 425px;
+
+    div {
+      margin-bottom: 20px;
+    }
+}
+
+fieldset {
+  padding: 15px 25px;
+  border: 1px solid $text-border-color;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+}
+
+.textInput {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.25px solid $text-border-color;
+    background-color: $input-color;
+    margin-top: 7px;
+
+    height: 25px;
+}
+
+textarea {
+  @extend .textInput;
+
+  height: 50px;
+}
+
+button.mainLabel {
+  padding: 4px 8px;
+  margin-right: 15px;
+  @extend body;
+  font-weight: bold;
+  border: 2px solid $text-border-color;
+}
+
+button.restart {
+  @extend body;
+  text-decoration: underline;
+  border: none;
+}
+
+p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+
+.mainLabel {
+  font-weight: bold;
+}
+
+legend {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.checkOrRadio {
+  // width: 1px;
+  // margin-right: 15px;
+}
