@@ -1,0 +1,18 @@
+var expect = require('chai').expect;
+
+describe('A basic test', function () {
+  it('should pass when everything is okay', function () {
+    expect(true).to.be.true;
+  });
+});
+
+
+var assert = require('chai').assert;
+describe('Array', function() {
+  describe('#indexOf()', function() {
+    it('should return -1 when the value is not present', function() {
+      assert.equal(-1, [1,2,3].indexOf(5));
+      assert.equal(-1, [1,2,3].indexOf(0));
+    });
+  });
+});
