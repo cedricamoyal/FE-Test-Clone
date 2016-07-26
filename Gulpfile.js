@@ -24,7 +24,7 @@ gulp.task("lint", function() {
         .pipe(jshint.reporter("default"));
 });
 
-gulp.task('default', function() {
+gulp.task('watch1', function() {
     gulp.watch("js/main.js", ["lint"]);
 });
 
@@ -42,6 +42,6 @@ gulp.task('mocha', function() {
         .on('error', gutil.log);
 });
 
-gulp.task('default', function() {
+gulp.task('watch2', function() {
       gulp.watch(['test/**'], ['mocha']);
 });

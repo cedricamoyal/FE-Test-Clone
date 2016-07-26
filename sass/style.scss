@@ -2,6 +2,13 @@ $text-border-color: #e2e2e2;
 $backgound-color: #3c4a54;
 $input-color: #80848a;
 
+@mixin border($border) {
+  -webkit-border: $border;
+     -moz-border: $border;
+      -ms-border: $border;
+          border: $border;
+}
+
 body {
   background-color: $backgound-color;
   font-family: 'Open Sans', sans-serif;
@@ -21,7 +28,7 @@ form {
 
 fieldset {
   padding: 15px 25px;
-  border: 1px solid $text-border-color;
+  @include border(1px solid $text-border-color);
 }
 
 label {
@@ -32,7 +39,7 @@ label {
 .textInput {
     width: 100%;
     box-sizing: border-box;
-    border: 0.25px solid $text-border-color;
+    @include border(0.25px solid $text-border-color);
     background-color: $input-color;
     margin-top: 7px;
 
@@ -50,7 +57,7 @@ button.mainLabel {
   margin-right: 15px;
   @extend body;
   font-weight: bold;
-  border: 2px solid $text-border-color;
+  @include border(2px solid $text-border-color);
 }
 
 button.restart {

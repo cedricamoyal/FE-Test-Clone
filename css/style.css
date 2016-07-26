@@ -13,6 +13,9 @@ form {
 
 fieldset {
   padding: 15px 25px;
+  -webkit-border: 1px solid #e2e2e2;
+  -moz-border: 1px solid #e2e2e2;
+  -ms-border: 1px solid #e2e2e2;
   border: 1px solid #e2e2e2; }
 
 label {
@@ -22,6 +25,9 @@ label {
 .textInput, textarea {
   width: 100%;
   box-sizing: border-box;
+  -webkit-border: 0.25px solid #e2e2e2;
+  -moz-border: 0.25px solid #e2e2e2;
+  -ms-border: 0.25px solid #e2e2e2;
   border: 0.25px solid #e2e2e2;
   background-color: #80848a;
   margin-top: 7px;
@@ -34,6 +40,9 @@ button.mainLabel {
   padding: 4px 8px;
   margin-right: 15px;
   font-weight: bold;
+  -webkit-border: 2px solid #e2e2e2;
+  -moz-border: 2px solid #e2e2e2;
+  -ms-border: 2px solid #e2e2e2;
   border: 2px solid #e2e2e2; }
 
 button.restart {
